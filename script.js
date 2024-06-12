@@ -474,12 +474,7 @@ function runner_ele(Personal_data, params, idname) {
             Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
 
         }
-        if (idname === "Age") {
-            let funcVal = AgeGen()
-            Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
-
-        }
+        
         if (idname === "Gender") {
             let funcVal = Gendr()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
@@ -492,12 +487,7 @@ function runner_ele(Personal_data, params, idname) {
             Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
 
         }
-        if (idname === "Country") {
-            let funcVal = Cntry()
-            Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
-
-        }
+        
         if (idname === "Phn-no") {
             let funcVal = Ph()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`

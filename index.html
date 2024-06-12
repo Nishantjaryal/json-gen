@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON GEN</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main center top no-gap row-rev w-full">
+
+      <div class="w-set min-h">
+        <div class="input flex p-all padding-y min-h">
+        
+            <div class="row center margin-top">
+              <input class="min-w p-15" placeholder="Number" type="number" min="1"  id="inpt_win" />
+              <button id="btn">Generate</button>
+            </div>
+            <div class="row  center gapX margin-top">
+              <span class="bg row center detect_change"
+                ><label for="Name">Name</label
+                ><input
+                  name="Name"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Name"
+                  checked
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="E-mail">E-mail</label
+                ><input
+                  name="E-mail"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="E-mail"
+                  checked
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="ID">ID</label
+                ><input
+                  name="ID"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="ID"
+                  checked
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="Age">Age</label
+                ><input name="Age" class="checkbox fit" type="checkbox" id="Age" 
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="Gender">Gender</label
+                ><input
+                  name="Gender"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Gender"
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="Country">Country</label
+                ><input
+                  name="Country"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Country"
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="Phn-no">Phn no.</label
+                ><input
+                  name="Phn-no"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Phn-no"
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="Profession">Profession</label
+                ><input
+                  name="Profession"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Profession"
+              />
+            </span>
+              <span class="bg row center detect_change"
+                ><label for="intell">IQ</label
+                ><input
+                  name="intell"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="intell"
+              />
+            </span>
+             
+              <span class="bg row center detect_change"
+                ><label for="Passion">Passion</label
+                ><input
+                  name="Passion"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Passion"
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="Behaviour">Behaviour</label
+                ><input
+                  name="Behaviour"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Behaviour"
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="Boolean">Boolean</label
+                ><input
+                  name="Boolean"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Boolean"
+              /></span>
+              <span class="bg row center detect_change"
+                ><label for="Date">Date</label
+                ><input
+                  name="Date"
+                  class="checkbox fit"
+                  type="checkbox"
+                  id="Date"
+              /></span>
+            </div>
+          </div>
+      </div>
+
+      <div class="codeBox flex center erase relative min-h">
+
+
+        <div class="full-code padding-y flex center-y p-all min-h ">
+            <p class="block">{</p>
+                    <p class="flex gap padding-y-5 text-sm"  id="acrhitecture"></p>
+            <p class="block">}</p>
+        </div>
+        <button class="absolute top-left" id="copy_arch">
+          Copy
+      </button>
+
+      </div>
+
+      <div class="codeBoxMain relative min-h">
+
+        <div class="full-code flex center-y p-all min-h">
+            <p class="block text-yellow">[</p>
+                    <p class="flex gap padding-y-5 text-sm" id="acrhitectureMain"></p>
+            <p class="block text-yellow">]</p>
+        </div>
+
+        <button class="absolute top-left" id="copy_data">
+            Copy
+        </button>
+
+      </div>
+
+
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

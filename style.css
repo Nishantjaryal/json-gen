@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background: rgb(34, 33, 33);
+  min-height: 100vh;
+}
+
+.main {
+  min-height: 320px;
+  min-height: 100vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+    outline: none;
+  width: 15vw;
+  display: block;
+  height: 15px;
+  padding: 10px;
+}
+
+button {
+  margin: 0 10px 0 10px;
+  padding: 10px;
+  font-weight: 700;
+  background-color: #aaaaaa;
+  border: 2px solid #aaaaaa;
+  cursor: pointer;
+}
+button:hover{
+  background-color: #908f8f;
+  border: 2px solid #908f8f;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.row-rev {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  gap: 10px;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  min-width: 300px;
+  min-height: 50vh;
+  width: 100%;
+  /* background: #005CC8; */
+  background: #393b3d;
+
+}
+
+.margin-top {
+  margin: 20px 0 20px 0;
+}
+
+.fit {
+  width: fit-content;
+}
+
+.checkbox {
+  scale: 1.6;
+  outline: none;
+  border: none;
+}
+.gapX {
+  row-gap: 20px;
+}
+.gap {
+  gap: 4px;
+}
+
+.text-sm{
+  font-size: medium;
+}
+
+
+.padding-y {
+  padding: 20px 0 20px 0;
+}
+.padding-y-5 {
+  padding: 3px 0 3px 0;
+}
+
+
+.bg {
+  background-color: rgb(48, 45, 45);
+  padding: 10px 15px;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.min-w {
+  min-width: 200px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.full-code{
+    width: 100%;
+    min-height: 50vh;
+}
+
+.center-y{
+justify-content: center;
+}
+
+.p-all {
+  padding: 7px;
+}
+
+.p-15 {
+  padding: 18px;
+}
+
+
+
+.codeBox {
+  background-color: rgb(34, 33, 33);
+  width: 40%;
+  min-width: 300px;
+  height: 50vh;
+  color: white;
+}
+
+.min-h{
+  min-height: 350px;
+
+}
+
+.codeBoxMain{
+    background-color: rgb(19, 18, 18);
+  width: 100%;
+  min-width: 50vh;
+  height: fit-content;
+  color: white;
+}
+
+.w-set {
+  width: 60%;
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.no-gap {
+  gap: 0;
+}
+
+.block{
+    display: block;
+}
+
+.erase{
+    display: block;
+}
+
+@media screen and (max-width:800px) {
+
+    .erase{
+        display: none;
+    }
+    .w-set {
+        width: 100%;
+      }
+    
+}
+
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.top-left{
+    top:10px;
+    left:0px;
+}
+
+.text-blue{
+  color:#4ca0ff;
+}
+
+.text-orange{
+  color: rgb(255, 136, 93);
+}
+
+.text-yellow{
+  color: yellowgreen;
+}

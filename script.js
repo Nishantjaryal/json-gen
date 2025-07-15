@@ -353,19 +353,20 @@ let today = () => {
     return date;
 }
 
+// for test only
 
-console.log(genID())
-console.log(Ph())
-console.log(AgeGen())
-console.log(Gendr())
-console.log(UserData())
-console.log(Cntry())
-console.log(Proffsn())
-console.log(intelligence())
-console.log(passhn())
-console.log(Behvr())
-console.log(bool())
-console.log(today())
+// console.log(genID())
+// console.log(Ph())
+// console.log(AgeGen())
+// console.log(Gendr())
+// console.log(UserData())
+// console.log(Cntry())
+// console.log(Proffsn())
+// console.log(intelligence())
+// console.log(passhn())
+// console.log(Behvr())
+// console.log(bool())
+// console.log(today())
 
 
 let Name = document.getElementById("Name")
@@ -454,18 +455,18 @@ function runner_ele(Personal_data, params, idname) {
         if (idname === "Name") {
             let funcVal = Personal_data.name
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
         }
         if (idname === "Email") {
             let funcVal = Personal_data.Email
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
 
         }
         if (idname === "ID") {
             let funcVal = genID()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
 
         }
         if (idname === "Age") {
@@ -478,13 +479,13 @@ function runner_ele(Personal_data, params, idname) {
         if (idname === "Gender") {
             let funcVal = Gendr()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
 
         }
         if (idname === "Country") {
             let funcVal = Cntry()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
 
         }
         
@@ -497,7 +498,7 @@ function runner_ele(Personal_data, params, idname) {
         if (idname === "Profession") {
             let funcVal = Proffsn()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
 
         }
         if (idname === "IQ") {
@@ -509,13 +510,13 @@ function runner_ele(Personal_data, params, idname) {
         if (idname === "Passion") {
             let funcVal = passhn()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
 
         }
         if (idname === "Behaviour") {
             let funcVal = Behvr()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
 
         }
         if (idname === "Boolean") {
@@ -527,7 +528,7 @@ function runner_ele(Personal_data, params, idname) {
         if (idname === "Date") {
             let funcVal = today()
             Ele_str += `<p class="block">"<span class="text-blue">${idname}</span>": <span class="text-orange">${funcVal}</span>,</p>`
-            Running_Ele_Copy_str += `"${idname}": ${funcVal}, `
+            Running_Ele_Copy_str += `"${idname}": "${funcVal}", `
 
         }
 
